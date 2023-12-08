@@ -464,10 +464,11 @@ let dateString = frmdate.toString();
 let dateStrin= currentdate.toString();
 
 // Checking the length of the string
-if (dateString.length === 1 || dateStrin ===1) {
+if (dateString.length === 1 || dateStrin.length ===1) {
   // Add a leading '0' if the length is 1
    console.log("ky tumhe me for me dikha pa rha hu");
   dateString = '0' + dateString;
+  dateStrin='0' +dateStrin;
 }
 
  const frm=currentDate.getFullYear()+`-`+ month + '-' + dateString ;
