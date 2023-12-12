@@ -468,7 +468,9 @@ if (dateString.length === 1 || dateStrin.length ===1) {
   // Add a leading '0' if the length is 1
    console.log("ky tumhe me for me dikha pa rha hu");
   dateString = '0' + dateString;
-  dateStrin='0' +dateStrin;
+   if(currentdate<10){
+  dateStrin='0' + dateStrin;
+  }
 }
 
  const frm=currentDate.getFullYear()+`-`+ month + '-' + dateString ;
