@@ -467,11 +467,13 @@ let dateStrin = currentdate.toString();
 if (dateString.length === 1) {
   // Add a leading '0' if the length is 1
   dateString = '0' + dateString;
+  console.log("dateString,leading 0 added");
 }
 
 if (dateStrin.length === 1) {
   // Add a leading '0' if the length is 1
   dateStrin = '0' + dateStrin;
+  console.log("dateStrin,leading 0 added");
 }
 
 console.log("it is " + dateString);
