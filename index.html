@@ -461,16 +461,22 @@ let month = currentDate.getMonth() + 1;
 
  // Convert date to a string
 let dateString = frmdate.toString();
-let dateStrin= currentdate.toString();
+let dateStrin = currentdate.toString();
 
 // Checking the length of the string
-if (dateString.length === 1 || dateStrin.length ===1) {
+if (dateString.length === 1) {
   // Add a leading '0' if the length is 1
-  dateString ='0'   dateString;
-  console.log("its is "+dateString);
-     dateStrin= '0' dateStrin;
-  
+  dateString = '0' + dateString;
 }
+
+if (dateStrin.length === 1) {
+  // Add a leading '0' if the length is 1
+  dateStrin = '0' + dateStrin;
+}
+
+console.log("it is " + dateString);
+console.log("it is " + dateStrin);
+
 
  const frm=currentDate.getFullYear()+`-0`+ month + '-' + dateString ;
  console.log(frm+'frm ki value');
