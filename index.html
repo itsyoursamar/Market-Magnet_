@@ -466,16 +466,15 @@ let dateStrin= currentdate.toString();
 // Checking the length of the string
 if (dateString.length === 1 || dateStrin.length ===1) {
   // Add a leading '0' if the length is 1
-  dateString =   dateString;
+  dateString ='0'   dateString;
   console.log("its is "+dateString);
-   if(currentdate<10){
-  dateStrin=  dateStrin;
-  }
+     dateStrin= '0' dateStrin;
+  
 }
 
- const frm=currentDate.getFullYear()+`-0`+ month + '-0' + dateString ;
+ const frm=currentDate.getFullYear()+`-0`+ month + '-' + dateString ;
  console.log(frm+'frm ki value');
- const tu=currentDate.getFullYear()+`-0`+ month + '-0' + dateStrin ;
+ const tu=currentDate.getFullYear()+`-0`+ month + '-' + dateStrin ;
 
  console.log(tu+'tu ki value');
 
