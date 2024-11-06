@@ -455,7 +455,7 @@ var go3=document.getElementById('go-3');
 // amzn
 var currentDate = new Date();
 
-let month = currentDate.getMonth() + 1;
+let month = (currentDate.getMonth() + 1).toString().padStart(2, '0')
  let frmdate=currentDate.getDate() -3;
   let currentdate=currentDate.getDate()
 
@@ -480,9 +480,9 @@ console.log("it is " + dateString);
 console.log("it is " + dateStrin);
 
 
- const frm=currentDate.getFullYear()+ month + '-' + dateString ;
+ const frm=currentDate.getFullYear()+month + '-' + dateString ;
  console.log(frm+'frm ki value');
- const tu=currentDate.getFullYear()+ month + '-' + dateStrin ;
+ const tu=currentDate.getFullYear()+month + '-' + dateStrin ;
 
  console.log(tu+'tu ki value');
 
